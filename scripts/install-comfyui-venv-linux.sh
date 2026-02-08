@@ -10,7 +10,7 @@ python -m pipenv install --pre -vr custom_nodes/comfyui-manager/requirements.txt
 cd ..
 echo "#!/bin/bash" > run_gpu.sh
 echo "cd ComfyUI" >> run_gpu.sh
-echo "source venv/bin/activate" >> run_gpu.sh
+# echo "source venv/bin/activate" >> run_gpu.sh
 echo "python main.py --preview-method auto" >> run_gpu.sh
 chmod +x run_gpu.sh
 
